@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Reservation Hotel Room</title>
+		<link rel="stylesheet" href="CSS/style.css" />
+    </head>
+    <body>
+		<h1>Reservation Hotel Room</h1>
+		<form method="post">
+			<fieldset>
+				<legend>Personal Date</legend>
+				<label for = "name">1.Name</label><br />
+				<input type="text" id="name" name="name" size="30"/>
+				
+				<br /><br />
+				<label for = "Gender">2.Gender</label><br />
+				<input type="text" id="Gender" name="Gender" size="30"/>
+				
+				<br /><br />
+				<label for = "email">3.Email Address</label><br />
+				<input type="email" id="email" name="email" size="30"/>
+				
+				<br /><br />
+				<label for = "pNumber">4.Phone Number</label><br />
+				<input type="text" id="pNumber" name="pNumber" size="30"/>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Reservation Room Form</legend>
+				<label for = "rName">1.Reservatorn Name</label><br />
+				<input type="rName" id="rName" name="rName" size="30"/>
+				
+				<br /><br />
+				<label for = "date">2. Booking Date</label><br />
+				<input type="date" id="date" name="date" size="30"/>
+				
+				<br /><br />
+				<label for = "rType">3. Room Type</label><br />
+				<select id="rType" name="rType">
+						<option>Deluxe</option>
+						<option>Executive</option>
+						<option>Family Room</option>
+				</select>
+				
+				<br /><br />
+				<label for = "bType">4. Bed Type</label><br />
+				<select id="bType" name="bType">
+						<option>Single</option>
+						<option>Double (King Size)</option>
+				</select>
+				
+				<br /><br />
+				<label for = "Breakfast">5. Breakfast</label><br />
+				<input type ="radio" id="Breakfast" name="Breakfast" value="With Breakfast" />
+				<label for ="Breakfast">With Breakfast</label>
+				<input type ="radio" id="withoutBreakfast" name="Breakfast" value="Without Breakfast" />
+				<label for ="withoutBreakfast">Without Breakfast</label>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Payment</legend>
+				<label for = "ciDate">1. Check-in Date</label><br />
+				<input type="date" id="ciDate" name="ciDate" size="30"/>
+				
+				<br /><br />
+				<label for = "coDate">2. Check-Out Date</label><br />
+				<input type="date" id="coDate" name="coDate" size="30"/>
+				
+				<br /><br />
+				<label for = "paymentMethod">3. Payment Method</label><br />
+				<select id="paymentMethod" name="paymentMethod">
+						<option>Cash</option>
+						<option>Credit</option>
+				</select>
+			</fieldset>
+			
+			<br />
+			<input type="submit" name="submit" value="submit" />
+		</form>
+	
+	</body>
+	
+	</html>
