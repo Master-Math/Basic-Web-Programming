@@ -1,15 +1,21 @@
 	function fn_ValForm(){
 		var sMsg = "";
-		var validEmail = "^[a-z0-9][a-z0-9_\.-]{0,}[a-z0-9]@[a-z0-9][a-z0-9_\.-]{0,}[a-z0-9][\.][a-z0-9]{2,4}$";
+		var name=document.getElementById("name").value.trim();
+		var email=document.getElementById("email").value.trim();
+		var message=document.getElementById("message").value.trim();
+		
+		var validEmail = /^[a-z0-9][a-z0-9_\.-]{0,}[a-z0-9]@[a-z0-9][a-z0-9_\.-]{0,}[a-z0-9][\.][a-z0-9]{2,4}$/;
 		if(document.getElementById("name").value == ""){
 			sMsg += "\n* Anda belum mengisikan nama";
 		}
+		
 		if(document.getElementById("email").value == ""){
 			sMsg += "\n* Anda belum mengisikan email";
 		}
-		else if(document.getElementById("email").value != validEmail){
+		else if(!validEmail.test(email)){
 			sMsg += "\n* Format email tidak sesuai";
 		}
+		
 		if(document.getElementById("message").value==""){
 			sMsg += "\n* Anda belum mengisikan pesan";
 		}		
